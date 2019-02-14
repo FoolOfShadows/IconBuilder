@@ -13,6 +13,7 @@
 		79FAF674220B4E6500A52D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79FAF672220B4E6500A52D93 /* Main.storyboard */; };
 		79FAF680220B4E6600A52D93 /* IconBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FAF67F220B4E6600A52D93 /* IconBuilderTests.swift */; };
 		79FAF68B220B4E6600A52D93 /* IconBuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FAF68A220B4E6600A52D93 /* IconBuilderUITests.swift */; };
+		79FAF699220B4E6F00A52D93 /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FAF698220B4E6F00A52D93 /* ImageResizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		79FAF686220B4E6600A52D93 /* IconBuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IconBuilderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FAF68A220B4E6600A52D93 /* IconBuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconBuilderUITests.swift; sourceTree = "<group>"; };
 		79FAF68C220B4E6600A52D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79FAF698220B4E6F00A52D93 /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +98,13 @@
 		79FAF66B220B4E6500A52D93 /* IconBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				79FAF672220B4E6500A52D93 /* Main.storyboard */,
 				79FAF66C220B4E6500A52D93 /* AppDelegate.swift */,
 				79FAF66E220B4E6500A52D93 /* ViewController.swift */,
 				79FAF670220B4E6500A52D93 /* Assets.xcassets */,
-				79FAF672220B4E6500A52D93 /* Main.storyboard */,
 				79FAF675220B4E6500A52D93 /* Info.plist */,
 				79FAF676220B4E6500A52D93 /* IconBuilder.entitlements */,
+				79FAF698220B4E6F00A52D93 /* ImageResizer.swift */,
 			);
 			path = IconBuilder;
 			sourceTree = "<group>";
@@ -192,6 +195,11 @@
 				TargetAttributes = {
 					79FAF668220B4E6500A52D93 = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					79FAF67A220B4E6500A52D93 = {
 						CreatedOnToolsVersion = 10.2;
@@ -255,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79FAF66F220B4E6500A52D93 /* ViewController.swift in Sources */,
+				79FAF699220B4E6F00A52D93 /* ImageResizer.swift in Sources */,
 				79FAF66D220B4E6500A52D93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +430,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = IconBuilder/IconBuilder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VY6BVT84SC;
@@ -440,7 +448,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = IconBuilder/IconBuilder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VY6BVT84SC;
